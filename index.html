@@ -251,7 +251,6 @@
     <main>
         <form id="eati-form" action="#" method="POST">
 
-            <!-- Seção: Identificação (Nova) -->
             <fieldset>
                 <legend>Identificação (Opcional)</legend>
                 
@@ -269,7 +268,6 @@
                     </div>
                 </div>
                 
-                <!-- Container que aparece/desaparece -->
                 <div id="identificacao-container" class="hidden-section">
                     <p class="bonus-message">Ótimo! Ao se identificar, você concorrerá a sorteios de brindes.</p>
                     
@@ -283,7 +281,6 @@
                         <input type="text" id="id_cpf" name="id_cpf" class="form-input" placeholder="000.000.000-00">
                     </div>
                     
-                    <!-- Nova pergunta de perfil -->
                     <div class="question-block">
                         <span class="question-label">Qual o seu perfil principal?</span>
                         <div class="radio-group">
@@ -293,7 +290,6 @@
                         </div>
                     </div>
 
-                    <!-- Pergunta de instituição reaproveitada -->
                     <div class="question-block">
                         <label for="id_instituicao" class="question-label">Instituição ou Empresa</label>
                         <input type="text" id="id_instituicao" name="id_instituicao" class="form-input">
@@ -301,7 +297,6 @@
                 </div>
             </fieldset>
 
-            <!-- Seção: Palestra: Documentos Eletrônicos... -->
             <fieldset>
                 <legend>Palestra: Documentos Eletrônicos na Era das Credenciais Verificáveis (Lucas Machado da Palma)</legend>
 
@@ -371,7 +366,6 @@
                 </div>
             </fieldset>
 
-            <!-- Seção: Palestra: Desvendando a IA... -->
             <fieldset>
                 <legend>Palestra: Desvendando a IA: Estratégias para Inovar (Douglas Pereira)</legend>
 
@@ -442,7 +436,6 @@
 
             </fieldset>
 
-            <!-- Seção: Palestra: IA para Negócios... -->
             <fieldset>
                 <legend>Palestra: IA para Negócios (Cleber Zanchettin)</legend>
 
@@ -513,7 +506,6 @@
                 </div>
             </fieldset>
 
-            <!-- Seção: Palestra: Trabalhando para o Exterior... -->
             <fieldset>
                 <legend>Palestra: Trabalhando para o Exterior (Gabriel Ferreira Umbelino)</legend>
 
@@ -583,7 +575,6 @@
                 </div>
             </fieldset>
 
-            <!-- Seção: Palestra: IA para Todos... -->
             <fieldset>
                 <legend>Palestra: IA para Todos: descubra, use e entenda (Cleber Zanchettin)</legend>
                 
@@ -653,7 +644,6 @@
                 </div>
             </fieldset>
 
-            <!-- Seção: Palestra: Aumento de Produtividade... -->
             <fieldset>
                 <legend>Palestra: Aumento de Produtividade usando IA (Cleber Zanchettin)</legend>
 
@@ -723,7 +713,6 @@
                 </div>
             </fieldset>
 
-            <!-- Seção: Seleção de Minicurso (Nova) -->
             <fieldset>
                 <legend>Avaliação do Minicurso</legend>
                 
@@ -735,12 +724,15 @@
                         <option value="airflow">Minicurso: Primeiros Passos com Apache Airflow (Bernardo Gularte Kirsch)</option>
                         <option value="weka">Minicurso: Mineração de Dados com Weka (Solange Pertile)</option>
                         <option value="python-ia">Minicurso: IA com Python: Classificação e Predição (Evandro Preuss)</option>
+                        
+                        <option value="ia-seguranca">Minicurso: IA aplicada à Segurança da Informação: Ameaças e Oportunidades (Prof. Roberto Franciscatto)</option>
+                        <option value="docker">Minicurso: Introdução ao Docker: Containerize sua Aplicação (Matheus Vieira Nicolay)</option>
+                        <option value="shell-script">Minicurso: Linha de comando e programação Shell Script para Linux (Prof. Leandro Tibola)</option>
                         <option value="nenhum">Não participei de nenhum minicurso</option>
                     </select>
                 </div>
             </fieldset>
 
-            <!-- Minicurso: Deep Learning... (Oculto) -->
             <fieldset id="minicurso-deep-learning" class="minicurso-evaluation hidden-section">
                 <legend>Minicurso: Deep Learning na Prática (Cleber Zanchettin)</legend>
 
@@ -819,7 +811,6 @@
                 </div>
             </fieldset>
 
-            <!-- Minicurso: Primeiros Passos com Apache Airflow... (Oculto) -->
             <fieldset id="minicurso-airflow" class="minicurso-evaluation hidden-section">
                 <legend>Minicurso: Primeiros Passos com Apache Airflow (Bernardo Gularte Kirsch)</legend>
 
@@ -898,7 +889,6 @@
                 </div>
             </fieldset>
 
-            <!-- Minicurso: Mineração de Dados com Weka... (Oculto) -->
             <fieldset id="minicurso-weka" class="minicurso-evaluation hidden-section">
                 <legend>Minicurso: Mineração de Dados com Weka (Solange Pertile)</legend>
                 
@@ -978,7 +968,6 @@
 
             </fieldset>
 
-            <!-- Minicurso: IA com Python... (Oculto) -->
             <fieldset id="minicurso-python-ia" class="minicurso-evaluation hidden-section">
                 <legend>Minicurso: IA com Python: Classificação e Predição (Evandro Preuss)</legend>
 
@@ -1057,12 +1046,244 @@
                 </div>
             </fieldset>
 
-            <!-- Mensagem para quem não participou de minicurso (Oculto) -->
+            <fieldset id="minicurso-ia-seguranca" class="minicurso-evaluation hidden-section">
+                <legend>Minicurso: IA aplicada à Segurança da Informação: Ameaças e Oportunidades (Prof. Roberto Franciscatto)</legend>
+
+                <div class="question-block">
+                    <span class="question-label">O conteúdo foi útil e aplicável na sua prática profissional ou acadêmica?</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q69_opt1_roberto" name="q69_util_roberto" value="Sim, bastante"><label for="q69_opt1_roberto">Sim, bastante</label></div>
+                        <div class="radio-option"><input type="radio" id="q69_opt2_roberto" name="q69_util_roberto" value="Parcialmente"><label for="q69_opt2_roberto">Parcialmente</label></div>
+                        <div class="radio-option"><input type="radio" id="q69_opt3_roberto" name="q69_util_roberto" value="Pouco"><label for="q69_opt3_roberto">Pouco</label></div>
+                        <div class="radio-option"><input type="radio" id="q69_opt4_roberto" name="q69_util_roberto" value="Não"><label for="q69_opt4_roberto">Não</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">O instrutor Prof. Roberto Franciscatto demonstrou domínio do tema?</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q70_opt1_roberto" name="q70_dominio_roberto" value="Excelente"><label for="q70_opt1_roberto">Excelente</label></div>
+                        <div class="radio-option"><input type="radio" id="q70_opt2_roberto" name="q70_dominio_roberto" value="Bom"><label for="q70_opt2_roberto">Bom</label></div>
+                        <div class="radio-option"><input type="radio" id="q70_opt3_roberto" name="q70_dominio_roberto" value="Regular"><label for="q70_opt3_roberto">Regular</label></div>
+                        <div class="radio-option"><input type="radio" id="q70_opt4_roberto" name="q70_dominio_roberto" value="Fraco"><label for="q70_opt4_roberto">Fraco</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">Qualidade do material e dos exemplos apresentados:</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q71_opt1_roberto" name="q71_material_roberto" value="Excelente"><label for="q71_opt1_roberto">Excelente</label></div>
+                        <div class="radio-option"><input type="radio" id="q71_opt2_roberto" name="q71_material_roberto" value="Boa"><label for="q71_opt2_roberto">Boa</label></div>
+                        <div class="radio-option"><input type="radio" id="q71_opt3_roberto" name="q71_material_roberto" value="Regular"><label for="q71_opt3_roberto">Regular</label></div>
+                        <div class="radio-option"><input type="radio" id="q71_opt4_roberto" name="q71_material_roberto" value="Fraca"><label for="q71_opt4_roberto">Fraca</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">Nível técnico do minicurso:</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q72_opt1_roberto" name="q72_nivel_roberto" value="Adequado"><label for="q72_opt1_roberto">Adequado</label></div>
+                        <div class="radio-option"><input type="radio" id="q72_opt2_roberto" name="q72_nivel_roberto" value="Muito avançado"><label for="q72_opt2_roberto">Muito avançado</label></div>
+                        <div class="radio-option"><input type="radio" id="q72_opt3_roberto" name="q72_nivel_roberto" value="Muito básico"><label for="q72_opt3_roberto">Muito básico</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">Carga horária e ritmo das atividades foram:</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q73_opt1_roberto" name="q73_carga_roberto" value="Adequados"><label for="q73_opt1_roberto">Adequados</label></div>
+                        <div class="radio-option"><input type="radio" id="q73_opt2_roberto" name="q73_carga_roberto" value="Longos demais"><label for="q73_opt2_roberto">Longos demais</label></div>
+                        <div class="radio-option"><input type="radio" id="q73_opt3_roberto" name="q73_carga_roberto" value="Curtos demais"><label for="q73_opt3_roberto">Curtos demais</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">Infraestrutura do laboratório (equipamentos, internet, ambiente):</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q74_opt1_roberto" name="q74_infra_roberto" value="Excelente"><label for="q74_opt1_roberto">Excelente</label></div>
+                        <div class="radio-option"><input type="radio" id="q74_opt2_roberto" name="q74_infra_roberto" value="Boa"><label for="q74_opt2_roberto">Boa</label></div>
+                        <div class="radio-option"><input type="radio" id="q74_opt3_roberto" name="q74_infra_roberto" value="Regular"><label for="q74_opt3_roberto">Regular</label></div>
+                        <div class="radio-option"><input type="radio" id="q74_opt4_roberto" name="q74_infra_roberto" value="Ruim"><label for="q74_opt4_roberto">Ruim</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">Avaliação geral do minicurso</span>
+                    <div class="linear-scale">
+                        <label>1<input type="radio" id="q75_opt1_roberto" name="q75_geral_roberto" value="1"></label>
+                        <label>2<input type="radio" id="q75_opt2_roberto" name="q75_geral_roberto" value="2"></label>
+                        <label>3<input type="radio" id="q75_opt3_roberto" name="q75_geral_roberto" value="3"></label>
+                        <label>4<input type="radio" id="q75_opt4_roberto" name="q75_geral_roberto" value="4"></label>
+                        <label>5<input type="radio" id="q75_opt5_roberto" name="q75_geral_roberto" value="5"></label>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <label for="q76_comentario_roberto" class="question-label">Comentário ou sugestão</label>
+                    <textarea id="q76_comentario_roberto" name="q76_comentario_roberto" class="form-textarea"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset id="minicurso-docker" class="minicurso-evaluation hidden-section">
+                <legend>Minicurso: Introdução ao Docker: Containerize sua Aplicação (Matheus Vieira Nicolay)</legend>
+
+                <div class="question-block">
+                    <span class="question-label">O conteúdo foi útil e aplicável na sua prática profissional ou acadêmica?</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q69_opt1_nicolay" name="q69_util_nicolay" value="Sim, bastante"><label for="q69_opt1_nicolay">Sim, bastante</label></div>
+                        <div class="radio-option"><input type="radio" id="q69_opt2_nicolay" name="q69_util_nicolay" value="Parcialmente"><label for="q69_opt2_nicolay">Parcialmente</label></div>
+                        <div class="radio-option"><input type="radio" id="q69_opt3_nicolay" name="q69_util_nicolay" value="Pouco"><label for="q69_opt3_nicolay">Pouco</label></div>
+                        <div class="radio-option"><input type="radio" id="q69_opt4_nicolay" name="q69_util_nicolay" value="Não"><label for="q69_opt4_nicolay">Não</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">O instrutor Matheus Vieira Nicolay demonstrou domínio do tema?</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q70_opt1_nicolay" name="q70_dominio_nicolay" value="Excelente"><label for="q70_opt1_nicolay">Excelente</label></div>
+                        <div class="radio-option"><input type="radio" id="q70_opt2_nicolay" name="q70_dominio_nicolay" value="Bom"><label for="q70_opt2_nicolay">Bom</label></div>
+                        <div class="radio-option"><input type="radio" id="q70_opt3_nicolay" name="q70_dominio_nicolay" value="Regular"><label for="q70_opt3_nicolay">Regular</label></div>
+                        <div class="radio-option"><input type="radio" id="q70_opt4_nicolay" name="q70_dominio_nicolay" value="Fraco"><label for="q70_opt4_nicolay">Fraco</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">Qualidade do material e dos exemplos apresentados:</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q71_opt1_nicolay" name="q71_material_nicolay" value="Excelente"><label for="q71_opt1_nicolay">Excelente</label></div>
+                        <div class="radio-option"><input type="radio" id="q71_opt2_nicolay" name="q71_material_nicolay" value="Boa"><label for="q71_opt2_nicolay">Boa</label></div>
+                        <div class="radio-option"><input type="radio" id="q71_opt3_nicolay" name="q71_material_nicolay" value="Regular"><label for="q71_opt3_nicolay">Regular</label></div>
+                        <div class="radio-option"><input type="radio" id="q71_opt4_nicolay" name="q71_material_nicolay" value="Fraca"><label for="q71_opt4_nicolay">Fraca</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">Nível técnico do minicurso:</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q72_opt1_nicolay" name="q72_nivel_nicolay" value="Adequado"><label for="q72_opt1_nicolay">Adequado</label></div>
+                        <div class="radio-option"><input type="radio" id="q72_opt2_nicolay" name="q72_nivel_nicolay" value="Muito avançado"><label for="q72_opt2_nicolay">Muito avançado</label></div>
+                        <div class="radio-option"><input type="radio" id="q72_opt3_nicolay" name="q72_nivel_nicolay" value="Muito básico"><label for="q72_opt3_nicolay">Muito básico</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">Carga horária e ritmo das atividades foram:</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q73_opt1_nicolay" name="q73_carga_nicolay" value="Adequados"><label for="q73_opt1_nicolay">Adequados</label></div>
+                        <div class="radio-option"><input type="radio" id="q73_opt2_nicolay" name="q73_carga_nicolay" value="Longos demais"><label for="q73_opt2_nicolay">Longos demais</label></div>
+                        <div class="radio-option"><input type="radio" id="q73_opt3_nicolay" name="q73_carga_nicolay" value="Curtos demais"><label for="q73_opt3_nicolay">Curtos demais</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">Infraestrutura do laboratório (equipamentos, internet, ambiente):</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q74_opt1_nicolay" name="q74_infra_nicolay" value="Excelente"><label for="q74_opt1_nicolay">Excelente</label></div>
+                        <div class="radio-option"><input type="radio" id="q74_opt2_nicolay" name="q74_infra_nicolay" value="Boa"><label for="q74_opt2_nicolay">Boa</label></div>
+                        <div class="radio-option"><input type="radio" id="q74_opt3_nicolay" name="q74_infra_nicolay" value="Regular"><label for="q74_opt3_nicolay">Regular</label></div>
+                        <div class="radio-option"><input type="radio" id="q74_opt4_nicolay" name="q74_infra_nicolay" value="Ruim"><label for="q74_opt4_nicolay">Ruim</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">Avaliação geral do minicurso</span>
+                    <div class="linear-scale">
+                        <label>1<input type="radio" id="q75_opt1_nicolay" name="q75_geral_nicolay" value="1"></label>
+                        <label>2<input type="radio" id="q75_opt2_nicolay" name="q75_geral_nicolay" value="2"></label>
+                        <label>3<input type="radio" id="q75_opt3_nicolay" name="q75_geral_nicolay" value="3"></label>
+                        <label>4<input type="radio" id="q75_opt4_nicolay" name="q75_geral_nicolay" value="4"></label>
+                        <label>5<input type="radio" id="q75_opt5_nicolay" name="q75_geral_nicolay" value="5"></label>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <label for="q76_comentario_nicolay" class="question-label">Comentário ou sugestão</label>
+                    <textarea id="q76_comentario_nicolay" name="q76_comentario_nicolay" class="form-textarea"></textarea>
+                </div>
+            </fieldset>
+
+            <fieldset id="minicurso-shell-script" class="minicurso-evaluation hidden-section">
+                <legend>Minicurso: Linha de comando e programação Shell Script para Linux (Prof. Leandro Tibola)</legend>
+
+                <div class="question-block">
+                    <span class="question-label">O conteúdo foi útil e aplicável na sua prática profissional ou acadêmica?</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q69_opt1_tibola" name="q69_util_tibola" value="Sim, bastante"><label for="q69_opt1_tibola">Sim, bastante</label></div>
+                        <div class="radio-option"><input type="radio" id="q69_opt2_tibola" name="q69_util_tibola" value="Parcialmente"><label for="q69_opt2_tibola">Parcialmente</label></div>
+                        <div class="radio-option"><input type="radio" id="q69_opt3_tibola" name="q69_util_tibola" value="Pouco"><label for="q69_opt3_tibola">Pouco</label></div>
+                        <div class="radio-option"><input type="radio" id="q69_opt4_tibola" name="q69_util_tibola" value="Não"><label for="q69_opt4_tibola">Não</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">O instrutor Prof. Leandro Tibola demonstrou domínio do tema?</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q70_opt1_tibola" name="q70_dominio_tibola" value="Excelente"><label for="q70_opt1_tibola">Excelente</label></div>
+                        <div class="radio-option"><input type="radio" id="q70_opt2_tibola" name="q70_dominio_tibola" value="Bom"><label for="q70_opt2_tibola">Bom</label></div>
+                        <div class="radio-option"><input type="radio" id="q70_opt3_tibola" name="q70_dominio_tibola" value="Regular"><label for="q70_opt3_tibola">Regular</label></div>
+                        <div class="radio-option"><input type="radio" id="q70_opt4_tibola" name="q70_dominio_tibola" value="Fraco"><label for="q70_opt4_tibola">Fraco</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">Qualidade do material e dos exemplos apresentados:</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q71_opt1_tibola" name="q71_material_tibola" value="Excelente"><label for="q71_opt1_tibola">Excelente</label></div>
+                        <div class="radio-option"><input type="radio" id="q71_opt2_tibola" name="q71_material_tibola" value="Boa"><label for="q71_opt2_tibola">Boa</label></div>
+                        <div class="radio-option"><input type="radio" id="q71_opt3_tibola" name="q71_material_tibola" value="Regular"><label for="q71_opt3_tibola">Regular</label></div>
+                        <div class="radio-option"><input type="radio" id="q71_opt4_tibola" name="q71_material_tibola" value="Fraca"><label for="q71_opt4_tibola">Fraca</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">Nível técnico do minicurso:</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q72_opt1_tibola" name="q72_nivel_tibola" value="Adequado"><label for="q72_opt1_tibola">Adequado</label></div>
+                        <div class="radio-option"><input type="radio" id="q72_opt2_tibola" name="q72_nivel_tibola" value="Muito avançado"><label for="q72_opt2_tibola">Muito avançado</label></div>
+                        <div class="radio-option"><input type="radio" id="q72_opt3_tibola" name="q72_nivel_tibola" value="Muito básico"><label for="q72_opt3_tibola">Muito básico</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">Carga horária e ritmo das atividades foram:</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q73_opt1_tibola" name="q73_carga_tibola" value="Adequados"><label for="q73_opt1_tibola">Adequados</label></div>
+                        <div class="radio-option"><input type="radio" id="q73_opt2_tibola" name="q73_carga_tibola" value="Longos demais"><label for="q73_opt2_tibola">Longos demais</label></div>
+                        <div class="radio-option"><input type="radio" id="q73_opt3_tibola" name="q73_carga_tibola" value="Curtos demais"><label for="q73_opt3_tibola">Curtos demais</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">Infraestrutura do laboratório (equipamentos, internet, ambiente):</span>
+                    <div class="radio-group">
+                        <div class="radio-option"><input type="radio" id="q74_opt1_tibola" name="q74_infra_tibola" value="Excelente"><label for="q74_opt1_tibola">Excelente</label></div>
+                        <div class="radio-option"><input type="radio" id="q74_opt2_tibola" name="q74_infra_tibola" value="Boa"><label for="q74_opt2_tibola">Boa</label></div>
+                        <div class="radio-option"><input type="radio" id="q74_opt3_tibola" name="q74_infra_tibola" value="Regular"><label for="q74_opt3_tibola">Regular</label></div>
+                        <div class="radio-option"><input type="radio" id="q74_opt4_tibola" name="q74_infra_tibola" value="Ruim"><label for="q74_opt4_tibola">Ruim</label></div>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <span class="question-label">Avaliação geral do minicurso</span>
+                    <div class="linear-scale">
+                        <label>1<input type="radio" id="q75_opt1_tibola" name="q75_geral_tibola" value="1"></label>
+                        <label>2<input type="radio" id="q75_opt2_tibola" name="q75_geral_tibola" value="2"></label>
+                        <label>3<input type="radio" id="q75_opt3_tibola" name="q75_geral_tibola" value="3"></label>
+                        <label>4<input type="radio" id="q75_opt4_tibola" name="q75_geral_tibola" value="4"></label>
+                        <label>5<input type="radio" id="q75_opt5_tibola" name="q75_geral_tibola" value="5"></label>
+                    </div>
+                </div>
+                
+                <div class="question-block">
+                    <label for="q76_comentario_tibola" class="question-label">Comentário ou sugestão</label>
+                    <textarea id="q76_comentario_tibola" name="q76_comentario_tibola" class="form-textarea"></textarea>
+                </div>
+            </fieldset>
+
             <div id="minicurso-nenhum" class="minicurso-evaluation hidden-section" style="padding: 1.5rem 2rem;">
                 <p>Obrigado pela informação.</p>
             </div>
             
-            <!-- Seção: Avaliação Geral do Evento -->
             <fieldset>
                 <legend>Avaliação Geral do Evento</legend>
 
@@ -1091,7 +1312,6 @@
                 </div>
             </fieldset>
 
-            <!-- Rodapé com Botão de Envio -->
             <div class="form-footer">
                 <button type="submit" class="submit-button">Enviar Avaliação</button>
             </div>
@@ -1106,7 +1326,6 @@
         </p>
     </footer>
 
-    <!-- JavaScript para Lógica Dinâmica -->
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             
@@ -1131,12 +1350,10 @@
             minicursoSelect.addEventListener('change', function() {
                 const selectedValue = this.value;
 
-                // 1. Esconder todos os containers de minicurso
                 minicursoContainers.forEach(container => {
                     container.classList.add('hidden-section');
                 });
 
-                // 2. Mostrar o container selecionado (se houver)
                 if (selectedValue) {
                     const targetContainer = document.getElementById('minicurso-' + selectedValue);
                     if (targetContainer) {
